@@ -1,25 +1,31 @@
 # Stupid Simple Site Generator
 
 This is a simple static site generator using [Pandoc](https://pandoc.org) and a
-tiny [Bash](https://www.gnu.org/software/bash/) script. Inspired in
-[this blog post](http://savethevowels.org/posts/pandoc_website.html) it build
-your pages using the header and footer on the `templates/` folder.
+tiny [Bash](https://www.gnu.org/software/bash/) script. Inspired by
+[this blog post](http://savethevowels.org/posts/pandoc_website.html), it builds
+your pages using the header and footer from the `templates/` folder.
 
 
 ## Usage
 
-1. Install Pandoc in your computer
-2. Clone [this repo](https://github.com/atmantree/stupid-simple-site-generator)
-3. Add your markdown files with `.md` extension
-4. Run the `build_html.sh` script
-5. Get your generated files from the `_page` folder.
+1. [Install Pandoc](https://pandoc.org/installing.html) in your computer.
+2. Clone [this repo](https://github.com/atmantree/stupid-simple-site-generator).
+3. Add your markdown files with `.md` extension into the repo folder.
+4. Run the `build_html.sh` script.
+5. Get your generated files in the `_page` folder.
+
+> Note: the `README.md` file generate the `index.html` file.
 
 
-### Testing your generated pages
+### Test your generated pages
 
-1. in your terminal visit the `_page` folder.
-2. run this command `python3 -m http.server` (or `python -m SimpleHTTPServer`
-   if you are using Python 2)
+Test your generated pages running the `serve_page.sh` script and open the
+[localhost:8000/](http://localhost:8000/) address in your browser.
+
+> Note: If it fails, no problem. Just type `cd _page && python -m 
+> SimpleHTTPServer && cd ..` in your terminal.
+
+To stop serving your files just press `ctrl+c`.
 
 ## Contributors
 

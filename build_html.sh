@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Build page using pandoc, simple way.
-# source: http://savethevowels.org/posts/pandoc_website.html
 rm -rf _page
 mkdir _page
 find . -name \*.md -type f -exec pandoc -o _page/{}.html {} \;
