@@ -11,7 +11,7 @@ your pages using the header and footer from the `templates/` folder.
 1. [Install Pandoc](https://pandoc.org/installing.html) in your computer.
 2. Clone [this repo](https://github.com/atmantree/stupid-simple-site-generator).
 3. Add your markdown files with `.md` extension into the repo folder.
-4. Run the `build_html.sh` script.
+4. Run the `build.sh` script.
 5. Get your generated files in the `_page` folder.
 
 > Note: the `README.md` file generate the `index.html` file.
@@ -19,7 +19,7 @@ your pages using the header and footer from the `templates/` folder.
 
 ### Test your generated pages
 
-Test your generated pages running the `serve_page.sh` script and open the
+Test your generated pages running the `serve.sh` script and open the
 [localhost:8000/](http://localhost:8000/) address in your browser.
 
 > Note: If it fails, no problem. Just type `cd _page && python -m 
