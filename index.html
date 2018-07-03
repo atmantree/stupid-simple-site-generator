@@ -30,18 +30,18 @@
 <h1 id="stupid-simple-site-generator">Stupid Simple Site Generator</h1>
 <p>This is a simple static site generator using <a href="https://pandoc.org">Pandoc</a> and a tiny <a href="https://www.gnu.org/software/bash/">Bash</a> script. Inspired by <a href="http://savethevowels.org/posts/pandoc_website.html">this blog post</a>, it builds your pages using the header and footer from the <code>templates/</code> folder.</p>
 <h2 id="usage">Usage</h2>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><a href="https://pandoc.org/installing.html">Install Pandoc</a> in your computer.</li>
 <li>Clone <a href="https://github.com/atmantree/stupid-simple-site-generator">this repo</a>.</li>
 <li>Add your markdown files with <code>.md</code> extension into the repo folder.</li>
-<li>Run the <code>build_html.sh</code> script.</li>
+<li>Run the <code>build.sh</code> script.</li>
 <li>Get your generated files in the <code>_page</code> folder.</li>
 </ol>
 <blockquote>
 <p>Note: the <code>README.md</code> file generate the <code>index.html</code> file.</p>
 </blockquote>
 <h3 id="test-your-generated-pages">Test your generated pages</h3>
-<p>Test your generated pages running the <code>serve_page.sh</code> script and open the <a href="http://localhost:8000/">localhost:8000/</a> address in your browser.</p>
+<p>Test your generated pages running the <code>serve.sh</code> script and open the <a href="http://localhost:8000/">localhost:8000/</a> address in your browser.</p>
 <blockquote>
 <p>Note: If it fails, no problem. Just type <code>cd _page &amp;&amp; python -m  SimpleHTTPServer &amp;&amp; cd ..</code> in your terminal.</p>
 </blockquote>
